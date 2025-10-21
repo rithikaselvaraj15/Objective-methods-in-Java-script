@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Object Example</title>
+</head>
+<body>
+  <script>
+    // Create an object
+    let person = {
+      name: "Rithi",
+      age: 22,
+      
+      // Method
+      sayHello: function() {
+        console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+      }
+    };
+
+    // Access object properties
+    console.log(person.name);  // Output: Rithi
+    console.log(person.age);   // Output: 22
+
+    // Modify object properties
+    person.age = 23;
+    person.name = "Rithika";
+
+    // Call the object method
+    person.sayHello(); // Output: Hello, my name is Rithika and I am 23 years old.
+  </script>
+  <script>
+    // Create an object
+    let car = {
+      brand: "Toyota",
+      model: "Innova",
+      year: 2020,
+
+      // This is an object method
+      start: function() {
+        console.log("The car has started!");
+      }
+    };
+
+    // Calling the object method
+    car.start(); // Output: The car has started!
+  </script>
+
+  <script>
+    // Create an object with methods
+    let person1 = {
+      Name: "Rithi",
+      Age: 22,
+
+      // Method 1: greet
+      greet: function() {
+        console.log("Hello! My name is " + this.Name);
+      },
+
+      // Method 2: showAge
+      showAge: function() {
+        console.log("I am " + this.Age + " years old.");
+      }
+    };
+
+    // Calling the object methods
+    person1.greet();   // Output: Hello! My name is Rithi
+    person1.showAge(); // Output: I am 22 years old.
+  </script>
+</body>
+</html>
